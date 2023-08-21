@@ -4,11 +4,6 @@ import streamlit as st
 import openai
 import time
 
-# Title with logo
-app_logo = "https://github.com/vikasharma005/SwaasthyaAI/blob/main/logo.png"
-st.title('SwaasthyaAI: Personalized Fitness')
-st.image(app_logo, use_column_width=True)
-
 st.set_page_config(
     page_title="SwaasthyaAI",
     page_icon="https://github.com/vikasharma005/SwaasthyaAI/blob/main/logo.png",
@@ -21,6 +16,10 @@ st.set_page_config(
     },
 )
 # Sidebar for OpenAI API Key Input
+# Add logo to sidebar
+logo_image = "logo.png"
+st.sidebar.image(logo_image, use_column_width=True)
+
 st.sidebar.title('Insert OpenAI API Key to use GPT4')
 user_openai_key = st.sidebar.text_input('Enter OpenAI API Key (Please):')
 
