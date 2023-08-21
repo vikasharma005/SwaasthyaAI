@@ -4,9 +4,17 @@ import streamlit as st
 import openai
 import time
 
+# Add logo to sidebar
+logo_image = "logo.png"
+st.sidebar.image(logo_image, use_column_width=True)
+# Title with logo
+app_logo = "https://github.com/vikasharma005/SwaasthyaAI/blob/main/logo.png"
+st.title('SwaasthyaAI: Personalized Fitness')
+st.image(app_logo, use_column_width=True)
+
 st.set_page_config(
     page_title="SwaasthyaAI",
-    page_icon="💪",
+    page_icon="https://github.com/vikasharma005/SwaasthyaAI/blob/main/logo.png",
     layout="centered",
     initial_sidebar_state="collapsed",
     menu_items={
