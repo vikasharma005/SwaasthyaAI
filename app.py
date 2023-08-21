@@ -4,9 +4,6 @@ import streamlit as st
 import openai
 import time
 
-# Add logo to sidebar
-logo_image = "logo.png"
-st.sidebar.image(logo_image, use_column_width=True)
 # Title with logo
 app_logo = "https://github.com/vikasharma005/SwaasthyaAI/blob/main/logo.png"
 st.title('SwaasthyaAI: Personalized Fitness')
